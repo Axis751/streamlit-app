@@ -10,6 +10,7 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 st.title('Dashboard')
 st.write("Toto bude jednoduchý text!")
 
+
 # ---
 st.scatter_chart(df_selected,
       x='celkovy_pocet_ridicu',
