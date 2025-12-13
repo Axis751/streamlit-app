@@ -9,7 +9,6 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 
 st.title('Dashboard')
 
-
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
 
 with _bodovani:
