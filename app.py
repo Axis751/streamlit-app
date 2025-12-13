@@ -7,7 +7,6 @@ df_bodovani = pd.read_csv('bodovani_ridici.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
-
 st.title('Dashboard')
 st.write("Toto bude jednoduchý text!")
 
