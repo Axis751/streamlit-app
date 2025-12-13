@@ -12,7 +12,6 @@ st.write("Toto bude jednoduchý text!")
 
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
 
-
 with _bodovani:
     _1, _2 = st.columns(2)
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
