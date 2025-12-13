@@ -8,6 +8,7 @@ df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['p
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
 st.title('Dashboard')
+st.write("Toto bude jednoduchý text!")
 
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
 
@@ -20,7 +21,7 @@ with _bodovani:
             alt.Tooltip('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
             alt.Tooltip('pocet_bodovanych_ridicu', title='Počet bodovaných řidičů'),
             alt.Tooltip('uzemi_txt', title='Kraj')]
-    ).interactive()
+    )
 
     st.altair_chart(chart, use_container_width=True)
 
