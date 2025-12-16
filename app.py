@@ -20,7 +20,7 @@ with _3:
 with _4:
     st.info('Data se analyzují')
 
-st.info('Toto je informační koutek')
+st.info('Toto je informační koutek zobrazení dat:')
 
 
 
