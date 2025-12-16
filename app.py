@@ -10,6 +10,10 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 st.title('Dashboard')
 st.write("Analyzovaná data:")
 
+st.header('----')
+st.info('Informace')
+st.warning('Varování')
+
 
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
 
