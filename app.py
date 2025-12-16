@@ -12,13 +12,13 @@ st.write("Analyzovaná data:")
 
 _1, _2, _3, _4 = st.columns(4)
 with _1:
-    st.success('Tohle je jasný úspěch!')
+    st.success('Bodování řidičů')
 with _2:
-    st.warning('Toto je varování!')
+    st.warning('Prodeje e-shopu')
 with _3:
-    st.error('Takhle ukazuju chyby!')
+    st.error('Data se analyzují')
 with _4:
-    st.info('Takhle je nové')
+    st.info('Data se analyzují')
 
 st.info('Toto je informační koutek')
 
