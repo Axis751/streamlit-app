@@ -24,7 +24,7 @@ st.info('Toto je informační koutek')
 
 
 
-_bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
+_bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty','Analyzuje se', 'Analyzuje se'])
 
 with _bodovani:
     _1, _2 = st.columns(2)
