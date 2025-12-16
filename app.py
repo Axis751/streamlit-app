@@ -10,9 +10,14 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 st.title('Dashboard')
 st.write("Analyzovaná data:")
 
-st.header('----')
-st.info('Informace')
-st.warning('Varování')
+_1, _2, _3 = st.columns(3)
+with _1:
+    st.success('Tohle je jasný úspěch!')
+with _2:
+    st.warning('Toto je varování!')
+with _3:
+    st.error('Takhle ukazuju chyby!')
+
 
 
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
