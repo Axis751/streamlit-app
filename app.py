@@ -10,13 +10,15 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 st.title('Dashboard')
 st.write("Analyzovaná data:")
 
-_1, _2, _3 = st.columns(3)
+_1, _2, _3, _4 = st.columns(4)
 with _1:
     st.success('Tohle je jasný úspěch!')
 with _2:
     st.warning('Toto je varování!')
 with _3:
     st.error('Takhle ukazuju chyby!')
+with _4:
+    st.info('Takhle je nové')
 
 
 
