@@ -20,6 +20,8 @@ with _3:
 with _4:
     st.info('Takhle je nové')
 
+st.info('Toto je informační koutek')
+
 
 
 _bodovani, _products = st.tabs(['Bodování řidičů', 'Produkty'])
