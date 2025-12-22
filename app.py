@@ -24,7 +24,7 @@ st.info('Toto je informační koutek zobrazení dat:')
 
 
 
-_bodovani, _products = st.tabs(['Bodování řidičů', 'Prodeje e-shopu'])
+_bodovani, _products = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy'])
 
 with _bodovani:
     _1, _2 = st.columns(2)
