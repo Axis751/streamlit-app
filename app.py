@@ -25,7 +25,7 @@ with _2:
 with _3:
     st.error('Top filmy')
 with _4:
-    st.info('')
+    st.info('V přípravě')
 
 st.info('Toto je informační koutek zobrazení dat:')
 
