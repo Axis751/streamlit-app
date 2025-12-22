@@ -4,6 +4,7 @@ import altair as alt
 
 df_products = pd.read_csv('products.csv')
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
+df_bodovani = pd.read_csv('df_data-movies.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
@@ -63,10 +64,6 @@ with _products:
                      'price': 'Cena [Kč]',
                      'product_name': 'Název produktu'
                  })
-
-df_bodovani = pd.read_csv('df_data-movies.csv')
-st.dataframe(df_data-movies)
-
 
 
 with _filmy:
