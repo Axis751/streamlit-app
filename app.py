@@ -72,13 +72,7 @@ with _filmy:
                  x_label='no',
                  y_label='rating_total')
 
-    st.dataframe(df_filmy[['product_name', 'price']],
-                 hide_index=True,
-                 column_config=
-                 {
-                     'price': 'Cena [Kč]',
-                     'product_name': 'Název produktu'
-                 })
+
 
 
 
