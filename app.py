@@ -73,7 +73,7 @@ with _products:
 
 # Filmy
 with _filmy:
-    st.write(df_filmy.head(3))
+    st.write(df_filmy.head(5))
 
     st.bar_chart(df_filmy,
                  x='no',
