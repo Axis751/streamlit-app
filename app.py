@@ -7,7 +7,7 @@ df_bodovani = pd.read_csv('bodovani_ridici.csv')
 df_filmy = pd.read_csv('filmy.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
-df_filmy = df_filmy[['o', 'title', 'rating_avg', 'rating_total', 'year']]
+df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
 # df_filmy = df_filmy[['Pořadí','Název filmu', 'Celkové hodnocení', 'Rating hodnocení', 'Rok']]
 # o,title,rating_avg,rating_total,year#
 
@@ -87,8 +87,9 @@ with _filmy:
                      'no': 'Pořadí',
                      'title': 'Název filmu',
                      'rating_avg': 'Celkové hodnocení',
-                     'rating_total': 'Rating_hodnocení',
-                     'year': 'Počet hodnocení'
+                     'rating_total': 'Počet hodnocení',
+                     'year': 'Rok'
+
                  })
 # o,title,rating_avg,rating_total,year
 
