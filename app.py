@@ -61,7 +61,8 @@ with _products:
                  column_config=
                  {
                      'price': 'Cena [Kč]',
-                     'product_name': 'Název produktu'}
+                     'product_name': 'Název produktu'
+                 })
 
 
 
