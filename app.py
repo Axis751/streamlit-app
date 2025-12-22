@@ -73,6 +73,9 @@ with _products:
 
 # Filmy
 with _filmy:
+    with _filmy:
+        st.write(df_filmy.head())
+
     st.bar_chart(df_filmy,
                  x='no',
                  y='rating_total',
@@ -93,6 +96,7 @@ with _filmy:
 
                  })
 # o,title,rating_avg,rating_total,year
+
 
 
 
