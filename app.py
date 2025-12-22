@@ -62,5 +62,18 @@ with _products:
                  {
                      'price': 'Cena [Kč]',
                      'product_name': 'Název produktu'
-                 }
-                 )
+                 })
+with _filmy:
+    st.bar_chart(df_Data-movies,
+                 x='no',
+                 y='rating_total',
+                 x_label='Název produktu',
+                 y_label='Cena [Kč]')
+
+    st.dataframe(df_Data-movies[['product_name', 'price']],
+                 hide_index=True,
+                 column_config=
+                 {
+                     'price': 'Cena [Kč]',
+                     'product_name': 'Název produktu'
+                 })
