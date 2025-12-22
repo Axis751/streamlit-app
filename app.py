@@ -73,7 +73,20 @@ with _products:
 
 # Filmy
 with _filmy:
-    st.write(df_filmy.head(5))
+    # st.write(df_filmy.head(5))
+
+    st.dataframe(df_filmy,
+                 hide_index=True,
+                 height=300,
+                 column_config=
+                 {
+                     'no': 'Pořadí',
+                     'title': 'Název filmu',
+                     'rating_avg': 'Celkové hodnocení',
+                     'rating_total': 'Celkové hodnocení',
+                     'year': 'Rok'
+
+                 })
 
     st.bar_chart(df_filmy,
                  x='no',
@@ -90,7 +103,7 @@ with _filmy:
                      'no': 'Pořadí',
                      'title': 'Název filmu',
                      'rating_avg': 'Celkové hodnocení',
-                     'rating_total': 'Počet hodnocení',
+                     'rating_total': 'Celkové hodnocení',
                      'year': 'Rok'
 
                  })
