@@ -4,7 +4,7 @@ import altair as alt
 
 df_products = pd.read_csv('products.csv')
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
-df_bodovani = pd.read_csv('filmy.csv')
+# df_bodovani = pd.read_csv('filmy.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
@@ -25,7 +25,7 @@ st.info('Toto je informační koutek zobrazení dat:')
 
 
 
-_bodovani, _products = st.tabs(['Bodování řidičů', 'Prodeje e-shopu'])
+_bodovani, _products = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy'])
 
 with _bodovani:
     _1, _2 = st.columns(2)
