@@ -76,6 +76,15 @@ with _filmy:
                  y_label='Průměrné hodnocení'
                  )
 
+    st.dataframe(df_selected,
+                 hide_index=True,
+                 height=300,
+                 column_config=
+                 {
+                     'title': 'Název filmu',
+                     'rating_total': 'Celkové hodnocení',
+                     'rating_avg': 'Počet hodnocení'
+                 })
 
 
 
