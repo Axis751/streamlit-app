@@ -63,8 +63,14 @@ with _products:
                      'price': 'Cena [Kč]',
                      'product_name': 'Název produktu'
                  })
+
+df_bodovani = pd.read_csv('df_data-movies.csv')
+st.dataframe(df_data-movies)
+
+
+
 with _filmy:
-    st.bar_chart(df_Data-movies,
+    st.bar_chart(df_data-movies,
                  x='no',
                  y='rating_total',
                  x_label='Název produktu',
