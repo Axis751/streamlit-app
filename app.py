@@ -73,7 +73,8 @@ with _filmy:
                  x='no',
                  y='rating_total',
                  x_label='Pořadí filmu',
-                 y_label='Průměrné hodnocení')
+                 y_label='Průměrné hodnocení'
+                 )
 
 
 
