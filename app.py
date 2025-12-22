@@ -68,7 +68,7 @@ with _products:
                  })
 
 # Filmy
-with _products:
+with _filmy:
     st.bar_chart(df_filmy,
                  x='no',
                  y='rating_total',
