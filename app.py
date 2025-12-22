@@ -82,7 +82,7 @@ with _filmy:
                  y_label='Průměrné hodnocení'
                  )
 
-    st.dataframe(df_selected,
+    st.dataframe(df_filmy,
                  hide_index=True,
                  height=300,
                  column_config=
