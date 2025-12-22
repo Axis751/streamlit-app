@@ -11,8 +11,6 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
 df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
 
-# df_filmy = df_filmy[['Pořadí','Název filmu', 'Celkové hodnocení', 'Rating hodnocení', 'Rok']]
-# o,title,rating_avg,rating_total,year#
 
 st.title('Dashboard')
 st.write("Analyzovaná data:")
