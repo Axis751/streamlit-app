@@ -4,7 +4,6 @@ import altair as alt
 
 df_products = pd.read_csv('products.csv')
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
-df_bodovani = pd.read_csv('df_data-movies.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
@@ -66,17 +65,3 @@ with _products:
                  })
 
 
-with _filmy:
-    st.bar_chart(df_data-movies,
-                 x='no',
-                 y='rating_total',
-                 x_label='Název produktu',
-                 y_label='Cena [Kč]')
-
-    st.dataframe(df_Data-movies[['product_name', 'price']],
-                 hide_index=True,
-                 column_config=
-                 {
-                     'price': 'Cena [Kč]',
-                     'product_name': 'Název produktu'
-                 })
