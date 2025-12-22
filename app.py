@@ -66,22 +66,21 @@ with _products:
                  })
 
 with _filmy:
-    st.subheader("Přehled nejlépe hodnocených filmů")
+    st.bar_chart(df_products,
+                 x='no',
+                 y='rating_total',
+                 x_label='no',
+                 y_label='rating_total')
 
-    # Graf: Hodnocení filmů
-    chart_filmy = alt.Chart(df_filmy).mark_bar(color='#ff4b4b').encode(
-        x=alt.X('hodnoceni:Q', title='Hodnocení (%)'),
-        y=alt.Y('nazev:N', sort='-x', title='Název filmu'),
-        tooltip=['nazev', 'hodnoceni', 'rok']
-    )
-    st.altair_chart(chart_filmy, use_container_width=True)
-
-    # Tabulka filmů
-    st.dataframe(df_filmy,
+    st.dataframe(df_filmy[['product_name', 'price']],
                  hide_index=True,
-                 column_config={
-                     "nazev": "Název filmu",
-                     "hodnoceni": st.column_config.NumberColumn("Hodnocení", format="%d %%"),
-                     "rok": "Rok vydání"
+                 column_config=
+                 {
+                     'price': 'Cena [Kč]',
+                     'product_name': 'Název produktu'
                  })
+
+
+
+
 
