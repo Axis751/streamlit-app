@@ -69,7 +69,7 @@ with _products:
 
 # Filmy
 with _products:
-    st.bar_chart(df_products,
+    st.bar_chart(df_filmy,
                  x='no',
                  y='rating_total',
                  x_label='Pořadí filmu',
