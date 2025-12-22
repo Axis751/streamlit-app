@@ -100,7 +100,7 @@ with _filmy:
                  column_config=
                  {
                      'no': 'Pořadí',
-                     'title': 'Název filmu',
+                     'title': 'Všechny hodnocené filmy',
                      'rating_avg': 'Celkové hodnocení',
                      'rating_total': 'Celkové hodnocení',
                      'year': 'Rok'
