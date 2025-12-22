@@ -65,4 +65,23 @@ with _products:
                      'product_name': 'Název produktu'
                  })
 
+with _filmy:
+    st.subheader("Přehled nejlépe hodnocených filmů")
+
+    # Graf: Hodnocení filmů
+    chart_filmy = alt.Chart(df_filmy).mark_bar(color='#ff4b4b').encode(
+        x=alt.X('hodnoceni:Q', title='Hodnocení (%)'),
+        y=alt.Y('nazev:N', sort='-x', title='Název filmu'),
+        tooltip=['nazev', 'hodnoceni', 'rok']
+    )
+    st.altair_chart(chart_filmy, use_container_width=True)
+
+    # Tabulka filmů
+    st.dataframe(df_filmy,
+                 hide_index=True,
+                 column_config={
+                     "nazev": "Název filmu",
+                     "hodnoceni": st.column_config.NumberColumn("Hodnocení", format="%d %%"),
+                     "rok": "Rok vydání"
+                 })
 
