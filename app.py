@@ -4,6 +4,7 @@ import altair as alt
 
 df_products = pd.read_csv('products.csv')
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
+df_filmy = pd.read_csv('filmy.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 
