@@ -9,6 +9,8 @@ df_filmy = pd.read_csv('filmy.csv')
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
+df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
+
 # df_filmy = df_filmy[['Pořadí','Název filmu', 'Celkové hodnocení', 'Rating hodnocení', 'Rok']]
 # o,title,rating_avg,rating_total,year#
 
@@ -75,18 +77,16 @@ with _products:
 with _filmy:
     # st.write(df_filmy.head(5))
 
-    st.dataframe(df_filmy,
-                 hide_index=True,
-                 height=300,
-                 column_config=
-                 {
-                     'no': 'Pořadí',
-                     'title': 'Název filmu',
-                     'rating_avg': 'Celkové hodnocení',
-                     'rating_total': 'Celkové hodnocení',
-                     'year': 'Rok'
-
-                 })
+    st.dataframe(df_top5_hlasy,
+             hide_index=True,
+             height=215, # Výška upravena pro 5 řádků
+             column_config={
+                 'no': 'Pořadí',
+                 'title': 'Název filmu',
+                 'rating_avg': 'Průměrné hodnocení',
+                 'rating_total': 'Počet hlasů', # Opravil jsem popisek, ať není stejný jako u hodnocení
+                 'year': 'Rok'
+             })
 
     st.bar_chart(df_filmy,
                  x='no',
