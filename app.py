@@ -81,7 +81,7 @@ with _filmy:
              hide_index=True,
              column_config={
                  'no': 'Pořadí',
-                 'title': 'Název filmu TOP 5',
+                 'title': 'Název TOP 5 filmů',
                  'rating_avg': 'Průměrné hodnocení',
                  'rating_total': 'Počet hlasů', # Opravil jsem popisek, ať není stejný jako u hodnocení
                  'year': 'Rok'
