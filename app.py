@@ -77,9 +77,8 @@ with _products:
 with _filmy:
     # st.write(df_filmy.head(5))
 
-    st.dataframe(df_top5_hlasy,
+    st.dataframe(df_top5_hodnoceni,
              hide_index=True,
-             height=215, # Výška upravena pro 5 řádků
              column_config={
                  'no': 'Pořadí',
                  'title': 'Název filmu',
