@@ -24,9 +24,10 @@ with _4:
 st.info('Toto je informační koutek zobrazení dat:')
 
 
-
 _bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy'])
 
+
+# Bodování
 with _bodovani:
     _1, _2 = st.columns(2)
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
@@ -50,6 +51,7 @@ with _bodovani:
                      'pocet_bodovanych_ridicu': 'Počet bodovaných řidičů'
                  })
 
+# Produkty
 with _products:
     st.bar_chart(df_products,
                  x='product_name',
@@ -65,8 +67,13 @@ with _products:
                      'product_name': 'Název produktu'
                  })
 
-
-
+# Filmy
+with _products:
+    st.bar_chart(df_products,
+                 x='no',
+                 y='rating_total',
+                 x_label='Pořadí filmu',
+                 y_label='Průměrné hodnocení')
 
 
 
