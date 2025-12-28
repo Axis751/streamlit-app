@@ -15,15 +15,14 @@ df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
 st.title('Dashboard')
 st.write("Analyzovaná data:")
 
-_1, _2, _3, _4 = st.columns(4)
+_1, _2, _3 = st.columns(3)
 with _1:
     st.success('Bodování řidičů')
 with _2:
     st.warning('Prodeje e-shopu')
 with _3:
     st.error('Top filmy')
-with _4:
-    st.info('V přípravě')
+
 
 st.info('Zobrazení v grafu:')
 
