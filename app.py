@@ -86,8 +86,8 @@ with _filmy:
              })
 
     st.bar_chart(df_filmy,
-                 x='no',
-                 y='rating_total',
+                 x='year',
+                 y='no',
                  x_label='Pořadí filmu',
                  y_label='Průměrné hodnocení'
                  )
