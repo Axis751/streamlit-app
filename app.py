@@ -88,8 +88,8 @@ with _filmy:
     st.bar_chart(df_filmy,
                  x='year',
                  y='no',
-                 x_label='Pořadí filmu',
-                 y_label='Průměrné hodnocení'
+                 x_label='Rok vydání',
+                 y_label='Počet filmů'
                  )
 
     st.dataframe(df_filmy,
