@@ -25,7 +25,7 @@ with _3:
 with _4:
     st.info('V přípravě')
 
-st.info('Toto je informační koutek zobrazení dat:')
+st.info('Zobrazení v grafu:')
 
 
 _bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy'])
