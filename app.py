@@ -99,6 +99,7 @@ with _products:
 # Filmy
 with _filmy:
     # st.write(df_filmy.head(5))
+    st.header("Statistiky filmové databáze")
 
     st.dataframe(df_top5_hodnoceni,
              hide_index=True,
@@ -109,8 +110,6 @@ with _filmy:
                  'rating_total': 'Počet hlasů', # Opravil jsem popisek, ať není stejný jako u hodnocení
                  'year': 'Rok'
              })
-
-    st.markdown("### :blue[Počet filmů podle roků]")
 
     st.bar_chart(df_filmy_year,
                  x='rok',
