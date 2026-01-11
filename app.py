@@ -11,6 +11,7 @@ pocet_filmu
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
 df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
+df_filmy_year = df_filmy[['rok', 'pocet_filmu']]
 df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
 
 
