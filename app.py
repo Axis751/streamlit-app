@@ -95,6 +95,11 @@ with _products:
                  x_label='Název produktu',
                  y_label='Cena [Kč]')
 
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Celkové počty</p>",
+        unsafe_allow_html=True
+    )
     st.dataframe(df_products[['product_name', 'price']],
                  hide_index=True,
                  column_config=
