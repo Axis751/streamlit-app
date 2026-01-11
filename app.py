@@ -12,8 +12,31 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
 df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
 
+
+# kódu, který jsi posílal dříve, načítáš df_filmy, ale tabulku df_filmy_year (agregovaný počet filmů) musíš
+# v kódu vypočítat.
+# Tímto vytvoříš tabulku, kterou st.bar_chart hledá
+
+# 1. Řádek: Seskupení a výpočet
+# Tento řádek dělá tři věci najednou (tzv. chaining)
+# df_filmy_year = df_filmy.groupby('year')   .size().   reset_index(name='pocet_filmu')
+
+# .groupby('year'): Vezme tvou hlavní tabulku a rozdělí ji do "balíčků" podle roku vydání. Všechny filmy z roku 1994
+# dá na jednu hromadu, filmy z roku 1995 na druhou atd.
+# .size(): Spočítá, kolik řádků (filmů) je v každém balíčku. Výsledkem je série, kde indexem je rok a hodnotou počet.
+# .reset_index(name='pocet_filmu'): Toto je klíčový krok. Převede výsledek zpět na tabulku (DataFrame).
+# Původní index (rok) se stane normálním sloupcem a nově vypočítaný sloupec s počty se pojmenuje 'pocet_filmu'
+
+# 2. Řádek: Přejmenování sloupce
+# df_filmy_year = df_filmy_year.rename(columns={'year': 'rok'})
+# Tento příkaz vezme sloupec s názvem 'year' a přejmenuje ho na 'rok'.
+# Důvodem je pravděpodobně to, že ve svém grafu (st.bar_chart) voláš osu x='rok'. Pokud bys tento řádek
+# vynechal, Python by vyhodil chybu, protože by v tabulce hledal "rok", ale našel by jen "year".
+
+
 df_filmy_year = df_filmy.groupby('year').size().reset_index(name='pocet_filmu')
 df_filmy_year = df_filmy_year.rename(columns={'year': 'rok'})
+
 
 st.title('Dashboard')
 st.write("Analyzovaná data:")
@@ -47,7 +70,7 @@ with _bodovani:
 
     st.altair_chart(chart, use_container_width=True)
 
-    st.dataframe(df_selected,
+     st.dataframe(df_selected,
                  hide_index=True,
                  height=300,
                  column_config=
@@ -86,6 +109,8 @@ with _filmy:
                  'rating_total': 'Počet hlasů', # Opravil jsem popisek, ať není stejný jako u hodnocení
                  'year': 'Rok'
              })
+
+    st.subheader("Počet filmů podle roků")
 
     st.bar_chart(df_filmy_year,
                  x='rok',
