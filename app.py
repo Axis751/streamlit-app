@@ -58,7 +58,13 @@ _bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu
 
 # Bodování
 with _bodovani:
-    _1, _2 = st.columns(2)
+
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Zobrazení v grafu</p>",
+        unsafe_allow_html=True
+    )
+        _1, _2 = st.columns(2)
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
         x=alt.X('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
         y=alt.Y('pocet_bodovanych_ridicu', title='Počet bodovaných řidičů'),
@@ -69,6 +75,13 @@ with _bodovani:
     )
 
     st.altair_chart(chart, use_container_width=True)
+
+
+st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Celkové hodnocení</p>",
+        unsafe_allow_html=True
+    )
 
     st.dataframe(df_selected,
                  hide_index=True,
@@ -82,13 +95,24 @@ with _bodovani:
 
 # Produkty
 with _products:
-    st.bar_chart(df_products,
+
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Počty v grafu</p>",
+        unsafe_allow_html=True
+    )
+        st.bar_chart(df_products,
                  x='product_name',
                  y='price',
                  x_label='Název produktu',
                  y_label='Cena [Kč]')
 
-    st.dataframe(df_products[['product_name', 'price']],
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Počty celkem</p>",
+        unsafe_allow_html=True
+    )
+        st.dataframe(df_products[['product_name', 'price']],
                  hide_index=True,
                  column_config=
                  {
@@ -98,7 +122,7 @@ with _products:
 
 # Filmy
 with _filmy:
-    # st.write(df_filmy.head(5))
+
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Top 5 filmů</p>",
