@@ -59,6 +59,8 @@ _bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu
 # Bodování
 with _bodovani:
 
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Zobrazení v grafu</p>",
@@ -95,6 +97,8 @@ with _bodovani:
 # Produkty
 with _products:
 
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Zobrazení v grafu</p>",
@@ -122,6 +126,8 @@ with _products:
 # Filmy
 with _filmy:
 
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Top 5 filmů</p>",
