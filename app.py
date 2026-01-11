@@ -139,6 +139,7 @@ with _filmy:
              })
 
     st.write("")  # malá mezera
+    st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Počet filmů podle roku vydání</p>",
