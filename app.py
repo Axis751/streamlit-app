@@ -71,6 +71,12 @@ with _bodovani:
 
     st.altair_chart(chart, use_container_width=True)
 
+
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Celkové počty</p>",
+        unsafe_allow_html=True
+    )
     st.dataframe(df_selected,
                  hide_index=True,
                  height=300,
