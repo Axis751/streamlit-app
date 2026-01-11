@@ -103,6 +103,7 @@ with _filmy:
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Top 5 filmů</p>",
         unsafe_allow_html=True
+    )
 
     st.dataframe(df_top5_hodnoceni,
              hide_index=True,
