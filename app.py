@@ -110,7 +110,11 @@ with _filmy:
              })
 
 
-    center_title("Statistiky filmové databáze", size=20, weight=700)
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Počet filmů podle roku vydání</p>",
+        unsafe_allow_html=True
+    )
 
     st.bar_chart(df_filmy_year,
                  x='rok',
