@@ -87,7 +87,7 @@ with _filmy:
 
     st.bar_chart(df_filmy,
                  x='no',
-                 y='rating_total',
+                 y='year',
                  x_label='Rok vydání',
                  y_label='Počet filmů'
                  )
