@@ -71,13 +71,6 @@ with _bodovani:
 
     st.altair_chart(chart, use_container_width=True)
 
-
-st.markdown(
-        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Celkové hodnocení</p>",
-        unsafe_allow_html=True
-    )
-
     st.dataframe(df_selected,
                  hide_index=True,
                  height=300,
@@ -91,12 +84,7 @@ st.markdown(
 # Produkty
 with _products:
 
-    st.markdown(
-        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Počty v grafu</p>",
-        unsafe_allow_html=True
-    )
-        st.bar_chart(df_products,
+    st.bar_chart(df_products,
                  x='product_name',
                  y='price',
                  x_label='Název produktu',
