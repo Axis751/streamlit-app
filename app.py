@@ -110,7 +110,7 @@ with _filmy:
              })
 
 
-    center_title("Počet filmů podle roku vydání", size=16)
+    center_title("Statistiky filmové databáze", size=20, weight=700)
 
     st.bar_chart(df_filmy_year,
                  x='rok',
