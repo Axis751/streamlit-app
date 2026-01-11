@@ -109,8 +109,7 @@ with _filmy:
                  'year': 'Rok'
              })
 
-    st.header("Statistiky filmové databáze")
-
+        st.subheader("Počet filmů podle roku vydání")
     st.bar_chart(df_filmy_year,
                  x='rok',
                  y='pocet_filmu',
