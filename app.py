@@ -84,7 +84,7 @@ with _filmy:
                  'year': 'Rok'
              })
 
-    st.bar_chart(df_filmy,
+    st.bar_chart(df_filmy_year,
                  x='year',
                  y='no',
                  x_label='Rok vydání',
