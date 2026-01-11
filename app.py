@@ -70,7 +70,7 @@ with _bodovani:
 
     st.altair_chart(chart, use_container_width=True)
 
-     st.dataframe(df_selected,
+    st.dataframe(df_selected,
                  hide_index=True,
                  height=300,
                  column_config=
