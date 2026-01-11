@@ -111,8 +111,10 @@ with _filmy:
 
     # st.subheader("Počet filmů podle roku vydání")
 
+
     st.markdown(
-        "<h4 style='text-align: center;'>Počet filmů podle roku vydání</h4>",
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Počet filmů podle roku vydání</p>",
         unsafe_allow_html=True
     )
 
