@@ -109,7 +109,7 @@ with _filmy:
                  'year': 'Rok'
              })
 
-        st.subheader("Počet filmů podle roku vydání")
+    st.subheader("Počet filmů podle roku vydání")
     st.bar_chart(df_filmy_year,
                  x='rok',
                  y='pocet_filmu',
