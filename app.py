@@ -109,7 +109,9 @@ with _filmy:
                  'rating_total': 'Počet hlasů', # Opravil jsem popisek, ať není stejný jako u hodnocení
                  'year': 'Rok'
              })
-    st.markdown(":blue[Počet filmů podle roků]")  # Nápis bude modrý
+
+st.markdown(":blue[Počet filmů podle roků]")  # Nápis bude modrý
+
     st.bar_chart(df_filmy_year,
                  x='rok',
                  y='pocet_filmu',
