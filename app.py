@@ -84,6 +84,11 @@ with _bodovani:
 # Produkty
 with _products:
 
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Zobrazení v grafu</p>",
+        unsafe_allow_html=True
+    )
     st.bar_chart(df_products,
                  x='product_name',
                  y='price',
