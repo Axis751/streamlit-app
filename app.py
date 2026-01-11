@@ -59,12 +59,7 @@ _bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu
 # Bodování
 with _bodovani:
 
-    st.markdown(
-        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Zobrazení v grafu</p>",
-        unsafe_allow_html=True
-    )
-        _1, _2 = st.columns(2)
+   _1, _2 = st.columns(2)
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
         x=alt.X('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
         y=alt.Y('pocet_bodovanych_ridicu', title='Počet bodovaných řidičů'),
