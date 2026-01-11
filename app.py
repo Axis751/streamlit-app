@@ -99,6 +99,11 @@ with _products:
 # Filmy
 with _filmy:
     # st.write(df_filmy.head(5))
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Top 5 filmů</p>",
+        unsafe_allow_html=True
+
     st.dataframe(df_top5_hodnoceni,
              hide_index=True,
              column_config={
@@ -122,6 +127,11 @@ with _filmy:
                  x_label='Rok vydání',
                  y_label='Počet filmů'
                  )
+
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "Seznam hodnocených filmů</p>",
+        unsafe_allow_html=True
 
     st.dataframe(df_filmy,
                  hide_index=True,
