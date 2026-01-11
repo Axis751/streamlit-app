@@ -132,6 +132,7 @@ with _filmy:
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Seznam hodnocených filmů</p>",
         unsafe_allow_html=True
+    )
 
     st.dataframe(df_filmy,
                  hide_index=True,
