@@ -87,7 +87,7 @@ with _filmy:
 
     st.bar_chart(df_filmy,
                  x='no',
-                 y='rating_avg',
+                 y='rating_total',
                  x_label='Rok vydání',
                  y_label='Počet filmů'
                  )
@@ -104,7 +104,8 @@ with _filmy:
                      'year': 'Rok'
 
                  })
-# o,title,rating_avg,rating_total,year
+
+# no,title,rating_avg,rating_total,year
 # rok, pocet_filmu, filmy_year.csv
 
 
