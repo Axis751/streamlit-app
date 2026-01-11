@@ -109,7 +109,13 @@ with _filmy:
                  'year': 'Rok'
              })
 
-    st.subheader("Počet filmů podle roku vydání")
+    # st.subheader("Počet filmů podle roku vydání")
+
+    st.markdown(
+        "<h4 style='text-align: center;'>Počet filmů podle roku vydání</h4>",
+        unsafe_allow_html=True
+    )
+
     st.bar_chart(df_filmy_year,
                  x='rok',
                  y='pocet_filmu',
