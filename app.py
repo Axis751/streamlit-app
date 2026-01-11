@@ -138,12 +138,9 @@ with _filmy:
                  'year': 'Rok'
              })
 
-
-    st.markdown(
-        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Počet filmů podle roku vydání</p>",
-        unsafe_allow_html=True
-    )
+    st.write("")  # malá mezera
+    st.subheader("Počet filmů podle roku vydání")
+    st.write("")  # malá mezera
 
     st.bar_chart(df_filmy_year,
                  x='rok',
