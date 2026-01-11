@@ -12,6 +12,8 @@ df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_poce
 df_filmy = df_filmy[['no', 'title', 'rating_avg', 'rating_total', 'year']]
 df_top5_hodnoceni = df_filmy.nlargest(5, 'rating_avg')
 
+df_filmy_year = df_filmy.groupby('year').size().reset_index(name='pocet_filmu')
+df_filmy_year = df_filmy_year.rename(columns={'year': 'rok'})
 
 st.title('Dashboard')
 st.write("Analyzovaná data:")
