@@ -110,7 +110,7 @@ with _filmy:
                  'year': 'Rok'
              })
 
-    st.markdown(":blue[Počet filmů podle roků]")  # Nápis bude modrý
+    st.markdown("### :blue[Počet filmů podle roků]")
 
     st.bar_chart(df_filmy_year,
                  x='rok',
