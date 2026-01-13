@@ -98,7 +98,7 @@ with _bodovani:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
-        "Zdroj dat: </p>",
+        "Zdroj dat: Český statistický úřad</p>",
         unsafe_allow_html=True
     )
 
@@ -132,6 +132,13 @@ with _products:
                      'price': 'Cena [Kč]',
                      'product_name': 'Název produktu'
                  })
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
+    st.markdown(
+        "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
+        "Zdroj dat: Internetový obchod v Polsku</p>",
+        unsafe_allow_html=True
+    )
 
 # Filmy
 with _filmy:
@@ -187,6 +194,13 @@ with _filmy:
                      'year': 'Rok'
 
                  })
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
+    st.markdown(
+        "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
+        "Zdroj dat: Česko-Slovenská filmová databáze </p>",
+        unsafe_allow_html=True
+    )
 
 # no,title,rating_avg,rating_total,year
 # rok, pocet_filmu, filmy_year.csv
