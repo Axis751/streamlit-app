@@ -116,13 +116,17 @@ with _products:
         "Nejvíce prodávané produkty přes internetový obchod</p>",
         unsafe_allow_html=True
     )
-    fig = st.bar_chart(df_products,
-                 x='product_name',
-                 y='price',
-                 x_label='Název produktu',
-                 y_label='Cena [Kč]')
 
-    st.divider()  # udělá čárku jako oddělení
+    import altair as alt
+
+    chart = alt.Chart(df_products).mark_bar().encode(
+        x=alt.X('product_name:N', title='Název produktu'),
+        y=alt.Y('price:Q', title='Cena [Kč]')
+    )
+
+    st.altair_chart(chart, use_container_width=True)
+    st.divider()
+
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
