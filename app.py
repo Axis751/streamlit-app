@@ -94,6 +94,16 @@ with _bodovani:
                      'pocet_bodovanych_ridicu': 'Počet bodovaných řidičů'
                  })
 
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
+    st.markdown(
+        "<p style='text-align: center; font-size: 10px; font-weight: 600;'>"
+        "Zdroj dat: </p>",
+        unsafe_allow_html=True
+    )
+
+
+
 # Produkty
 with _products:
 
