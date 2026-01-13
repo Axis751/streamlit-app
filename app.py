@@ -77,10 +77,9 @@ with _bodovani:
             alt.Tooltip('uzemi_txt', title='Kraj')]
     )
 
-    st.divider()  # udělá čárku jako oddělení
-
-
     st.altair_chart(chart, use_container_width=True)
+
+    st.divider()  # udělá čárku jako oddělení
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
