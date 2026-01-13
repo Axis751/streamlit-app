@@ -63,7 +63,7 @@ with _bodovani:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Zobrazení v grafu</p>",
+        "Rozložení dle počtu bodovaných řidičů</p>",
         unsafe_allow_html=True
     )
     _1, _2 = st.columns(2)
@@ -81,7 +81,7 @@ with _bodovani:
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Celkové počty</p>",
+        "Celkové počty bodovaných řidičů dle krajů</p>",
         unsafe_allow_html=True
     )
     st.dataframe(df_selected,
@@ -111,7 +111,7 @@ with _products:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Zobrazení v grafu</p>",
+        "Nejvíce prodávané produkty na internetovém obchodu v Polsku</p>",
         unsafe_allow_html=True
     )
     st.bar_chart(df_products,
@@ -122,7 +122,7 @@ with _products:
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Celkové počty</p>",
+        "Celkové počty prodaných produktů</p>",
         unsafe_allow_html=True
     )
     st.dataframe(df_products[['product_name', 'price']],
