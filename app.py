@@ -70,6 +70,7 @@ with _bodovani:
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
         x=alt.X('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
         y=alt.Y('pocet_bodovanych_ridicu', title='Počet bodovaných řidičů'),
+        color=('uzemí_txt')
         tooltip=[
             alt.Tooltip('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
             alt.Tooltip('pocet_bodovanych_ridicu', title='Počet bodovaných řidičů'),
