@@ -77,11 +77,7 @@ with _bodovani:
             alt.Tooltip('uzemi_txt', title='Kraj')]
     )
 
-
-    # st.scatter_charm(df_selected,  Day 7, 7:20 hod
-     #          x='celkovy_pocet_ridicu',
-     #           y='pocet_bodovanych_ridicu',
-     #           color='uzemí_txt')
+    st.divider()  # udělá čárku jako oddělení
 
 
     st.altair_chart(chart, use_container_width=True)
