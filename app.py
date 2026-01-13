@@ -178,12 +178,14 @@ with _filmy:
         unsafe_allow_html=True
     )
 
-    st.bar_chart(df_filmy_year,
-                 x='rok',
-                 y='pocet_filmu',
-                 x_label='Rok vydání',
-                 y_label='Počet filmů'
-                 )
+    import altair as alt
+
+    chart = alt.Chart(df_filmy_year).mark_bar().encode(
+        x=alt.X('rok:O', title='Rok vydání'),
+        y=alt.Y('pocet_filmu:Q', title='Počet filmů')
+    )
+
+    st.altair_chart(chart, use_container_width=True)
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
