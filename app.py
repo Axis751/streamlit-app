@@ -118,7 +118,7 @@ with _products:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "Nejvíce prodávané produkty na internetovém obchodu v Polsku</p>",
+        "Nejvíce prodávané produkty přes internetový obchod</p>",
         unsafe_allow_html=True
     )
     st.bar_chart(df_products,
@@ -146,7 +146,7 @@ with _products:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
-        "Zdroj dat: Internetový obchod v Polsku</p>",
+        "Zdroj dat: Internetový obchod</p>",
         unsafe_allow_html=True
     )
 
