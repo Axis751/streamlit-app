@@ -120,13 +120,13 @@ with _products:
                  x_label='Název produktu',
                  y_label='Cena [Kč]')
 
+    st.divider()  # udělá čárku jako oddělení
+
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Celkové počty prodaných produktů</p>",
         unsafe_allow_html=True
     )
-
-    st.divider()  # udělá čárku jako oddělení
 
     st.dataframe(df_products[['product_name', 'price']],
                  hide_index=True,
