@@ -78,7 +78,7 @@ with _bodovani:
     )
 
 
-    # st.scatter_charm(df_selected,
+    # st.scatter_charm(df_selected,  Day 7, 7:20 hod
      #          x='celkovy_pocet_ridicu',
      #           y='pocet_bodovanych_ridicu',
      #           color='uzemí_txt')
