@@ -187,6 +187,7 @@ with _filmy:
 
     st.altair_chart(chart, use_container_width=True)
 
+
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
         "Seznam hodnocených filmů</p>",
