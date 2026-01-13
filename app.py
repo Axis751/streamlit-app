@@ -125,6 +125,9 @@ with _products:
         "Celkové počty prodaných produktů</p>",
         unsafe_allow_html=True
     )
+
+    st.divider()  # udělá čárku jako oddělení
+
     st.dataframe(df_products[['product_name', 'price']],
                  hide_index=True,
                  column_config=
@@ -184,7 +187,7 @@ with _filmy:
 
     st.dataframe(df_filmy,
                  hide_index=True,
-                 height=300,
+                 height=300,  # Nastaví výšku tabulky
                  column_config=
                  {
                      'no': 'Pořadí',
@@ -194,7 +197,7 @@ with _filmy:
                      'year': 'Rok'
 
                  })
-    st.write("")  # malá mezera
+    st.write("")  # větší mezera
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
