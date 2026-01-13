@@ -198,7 +198,7 @@ with _filmy:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
-        "Zdroj dat: Česko-Slovenská filmová databáze </p>",
+        "Zdroj dat: Česko-Slovenská filmová databáze ČSFD.cz</p>",
         unsafe_allow_html=True
     )
 
