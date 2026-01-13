@@ -97,7 +97,7 @@ with _bodovani:
     st.write("")  # malá mezera
     st.write("")  # větší mezera
     st.markdown(
-        "<p style='text-align: center; font-size: 10px; font-weight: 600;'>"
+        "<p style='text-align: left; font-size: 12px; font-weight: 600;'>"
         "Zdroj dat: </p>",
         unsafe_allow_html=True
     )
