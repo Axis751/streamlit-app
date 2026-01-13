@@ -84,7 +84,7 @@ with _bodovani:
                 x='celkovy_pocet_ridicu',
                 y='pocet_bodovanych_ridicu',
                 color='uzemí_txt')
-     """
+    """
 
 
     st.altair_chart(chart, use_container_width=True)
