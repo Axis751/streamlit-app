@@ -66,6 +66,7 @@ with _bodovani:
         "Rozložení dle počtu bodovaných řidičů</p>",
         unsafe_allow_html=True
     )
+    """
     _1, _2 = st.columns(2)
     chart = alt.Chart(df_selected).mark_circle(size=120).encode(
         x=alt.X('celkovy_pocet_ridicu', title='Celkový počet řidičů'),
@@ -76,8 +77,18 @@ with _bodovani:
             alt.Tooltip('uzemi_txt', title='Kraj')]
     )
 
-    st.altair_chart(chart, use_container_width=True)
+    
+    Zakomentování textu: print("Tento kód se nespustí") print("Ani tento")
+    """
 
+    st.scatter_charm(df_selected,
+                x='celkovy_pocet_ridicu',
+                y='pocet_bodovanych_ridicu',
+                color='uzemí_txt')
+                
+
+
+    st.altair_chart(chart, use_container_width=True)
 
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
