@@ -78,13 +78,13 @@ with _bodovani:
     )
 
 
-    " Zakomentování textu: print("Tento kód se nespustí") print("Ani tento") "
+    "Zakomentování textu"
     
-     "   st.scatter_charm(df_selected,
-                x='celkovy_pocet_ridicu',
-                y='pocet_bodovanych_ridicu',
-                color='uzemí_txt')
-    "
+     # st.scatter_charm(df_selected,
+     #          x='celkovy_pocet_ridicu',
+     #           y='pocet_bodovanych_ridicu',
+     #           color='uzemí_txt')
+
 
     st.altair_chart(chart, use_container_width=True)
 
