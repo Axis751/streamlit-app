@@ -78,9 +78,7 @@ with _bodovani:
     )
 
 
-    "Zakomentování textu"
-    
-     # st.scatter_charm(df_selected,
+    # st.scatter_charm(df_selected,
      #          x='celkovy_pocet_ridicu',
      #           y='pocet_bodovanych_ridicu',
      #           color='uzemí_txt')
