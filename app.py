@@ -116,7 +116,7 @@ with _products:
         "Nejvíce prodávané produkty přes internetový obchod</p>",
         unsafe_allow_html=True
     )
-    st.bar_chart(df_products,
+    fig = st.bar_chart(df_products,
                  x='product_name',
                  y='price',
                  x_label='Název produktu',
