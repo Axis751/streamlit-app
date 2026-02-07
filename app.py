@@ -62,7 +62,7 @@ with _4:
 
 # st.info('Zobrazení v grafu:')
 
-st.info(
+    st.info(
         "<div style='background-color:#20c997;color:darkblue;padding:15px;border-radius:8px;'>"
         "obrazení v grafu:"
         "</div>",
