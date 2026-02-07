@@ -49,7 +49,7 @@ with _2:
 with _3:
     st.error('Top filmy')
 with _4:
-    st.info('HDP vs. délka života')
+    st.info('HDP vs. Délka života')
 
 #with _4:
 #    st.markdown(
