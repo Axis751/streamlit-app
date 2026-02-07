@@ -53,7 +53,7 @@ with _3:
 
 with _4:
     st.markdown(
-        "<div style='background-color:#e83e8c;color:white;padding:20px;border-radius:8px;'>"
+        "<div style='background-color:#e83e8c;color:white;padding:15px;border-radius:8px;'>"
         "GDP vs. délka života"
         "</div>",
         unsafe_allow_html=True
