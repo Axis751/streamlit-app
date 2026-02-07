@@ -60,14 +60,7 @@ with _4:
 #    )
 
 
-# st.info('Zobrazení v grafu:')
-
-    st.info(
-        "<div style='background-color:#20c997;color:darkblue;padding:15px;border-radius:8px;'>"
-        "obrazení v grafu:"
-        "</div>",
-        unsafe_allow_html=True
-    )
+st.info('Zobrazení v grafu:')
 
 
 _bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP vs. délka života'])
