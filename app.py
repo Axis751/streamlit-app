@@ -48,8 +48,19 @@ with _2:
     st.warning('Prodeje e-shopu')
 with _3:
     st.error('Top filmy')
+# with _4:
+#    st.info('GDP vs. délka života')
+
 with _4:
-    st.info('GDP vs. délka života')
+    st.markdown(
+        "<div style='background-color:#e83e8c;color:white;padding:10px;border-radius:8px;'>"
+        "Nové statistiky (růžová)"
+        "</div>",
+        unsafe_allow_html=True
+    )
+
+
+
 
 
 st.info('Zobrazení v grafu:')
