@@ -54,7 +54,7 @@ with _4:
 #with _4:
 #    st.markdown(
 #        "<div style='background-color:#20c997;color:darkblue;padding:15px;border-radius:8px;'>"
-#        "GDP vs. délka života"
+#        "HDP vs. délka života"
 #        "</div>",
 #        unsafe_allow_html=True
 #    )
@@ -242,7 +242,7 @@ with _HDP:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "GDP</p>",
+        "HDP</p>",
         unsafe_allow_html=True
     )
 
