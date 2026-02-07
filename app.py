@@ -221,7 +221,7 @@ with _filmy:
 
 
 # GDP
-with _bodovani:
+with _GDP:
 
     st.write("")  # malá mezera
     st.write("")  # větší mezera
