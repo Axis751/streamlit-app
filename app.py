@@ -60,7 +60,15 @@ with _4:
 #    )
 
 
-st.info('Zobrazení v grafu:')
+#st.info('Zobrazení v grafu:')
+
+st.markdown(
+    "<div style='background-color:#6f42c1;color:white;padding:10px;border-radius:6px;'>"
+    "Zobrazení v grafu:"
+    "</div>",
+    unsafe_allow_html=True
+)
+
 
 
 _bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP vs. délka života'])
