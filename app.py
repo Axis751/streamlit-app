@@ -49,7 +49,7 @@ with _2:
 with _3:
     st.error('Top filmy')
 with _4:
-    st.error('GDP')
+    st.info('GDP')
 
 
 st.info('Zobrazení v grafu:')
@@ -220,5 +220,14 @@ with _filmy:
 # rok, pocet_filmu, filmy_year.csv
 
 
+# GDP
+with _bodovani:
 
+    st.write("")  # malá mezera
+    st.write("")  # větší mezera
+    st.markdown(
+        "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
+        "GDP</p>",
+        unsafe_allow_html=True
+    )
 
