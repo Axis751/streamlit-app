@@ -5,7 +5,7 @@ import altair as alt
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
 df_products = pd.read_csv('products.csv')
 df_filmy = pd.read_csv('filmy.csv')
-
+df_GDP = pd.read_csv('gapminder_2007.csv')
 
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
@@ -48,12 +48,14 @@ with _2:
     st.warning('Prodeje e-shopu')
 with _3:
     st.error('Top filmy')
+with _4:
+    st.error('GDP')
 
 
 st.info('Zobrazení v grafu:')
 
 
-_bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy'])
+_bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP'])
 
 
 # Bodování
