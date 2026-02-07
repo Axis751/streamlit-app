@@ -54,7 +54,7 @@ with _3:
 with _4:
     st.markdown(
         "<div style='background-color:#e83e8c;color:white;padding:10px;border-radius:8px;'>"
-        "Nové statistiky (růžová)"
+        "GDP vs. délka života"
         "</div>",
         unsafe_allow_html=True
     )
