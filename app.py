@@ -41,7 +41,7 @@ df_filmy_year = df_filmy_year.rename(columns={'year': 'rok'})
 st.title('Dashboard')
 st.write("Analyzovaná data:")
 
-_1, _2, _3 = st.columns(3)
+_1, _2, _3, _4 = st.columns(4)
 with _1:
     st.success('Bodování řidičů')
 with _2:
