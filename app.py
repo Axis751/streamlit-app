@@ -70,7 +70,7 @@ st.markdown(
 
 
 
-_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'HDP vs. délka života'])
+_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'HDP vs. Délka života'])
 
 
 # Bodování
@@ -242,7 +242,7 @@ with _GDP:
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "HDP vs. Délka života (2007) - Najeď myší na bubliny</p>",
+        "HDP vs. Délka života (2007) - najeď myší na bubliny</p>",
         unsafe_allow_html=True
     )
 
