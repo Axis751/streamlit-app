@@ -48,22 +48,26 @@ with _2:
     st.warning('Prodeje e-shopu')
 with _3:
     st.error('Top filmy')
-# with _4:
-#    st.info('GDP vs. délka života')
-
 with _4:
-    st.markdown(
+    st.info('GDP vs. délka života')
+
+#with _4:
+#    st.markdown(
+#        "<div style='background-color:#20c997;color:darkblue;padding:15px;border-radius:8px;'>"
+#        "GDP vs. délka života"
+#        "</div>",
+#        unsafe_allow_html=True
+#    )
+
+
+# st.info('Zobrazení v grafu:')
+
+st.info(
         "<div style='background-color:#20c997;color:darkblue;padding:15px;border-radius:8px;'>"
-        "GDP vs. délka života"
+        "obrazení v grafu:"
         "</div>",
         unsafe_allow_html=True
     )
-
-
-
-
-
-st.info('Zobrazení v grafu:')
 
 
 _bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP vs. délka života'])
