@@ -236,7 +236,7 @@ with _filmy:
 
 
 # HDP
-with _HDP:
+with _GDP:
 
     st.write("")  # malá mezera
     st.write("")  # větší mezera
