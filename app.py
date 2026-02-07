@@ -5,7 +5,7 @@ import altair as alt
 df_bodovani = pd.read_csv('bodovani_ridici.csv')
 df_products = pd.read_csv('products.csv')
 df_filmy = pd.read_csv('filmy.csv')
-df_GDP = pd.read_csv('gapminder_2007.csv')
+df_HDP = pd.read_csv('gapminder_2007.csv')
 
 df_selected = df_bodovani[(df_bodovani['uzemi_typ'] == 'kraj') & (df_bodovani['pohlavi_txt'] == 'celkem')]
 df_selected = df_selected[['uzemi_txt', 'pocet_bodovanych_ridicu', 'celkovy_pocet_ridicu']]
@@ -49,7 +49,7 @@ with _2:
 with _3:
     st.error('Top filmy')
 with _4:
-    st.info('GDP vs. délka života')
+    st.info('HDP vs. délka života')
 
 #with _4:
 #    st.markdown(
@@ -60,8 +60,7 @@ with _4:
 #    )
 
 
-#st.info('Zobrazení v grafu:')
-
+#st.info('Zobrazení v grafu:')  # st.markdown je možnost změnit barvy
 st.markdown(
     "<div style='background-color:#6f42c1;color:white;padding:10px;border-radius:6px;'>"
     "Zobrazení v grafu:"
@@ -71,7 +70,7 @@ st.markdown(
 
 
 
-_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP vs. délka života'])
+_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'HDP vs. délka života'])
 
 
 # Bodování
@@ -236,8 +235,8 @@ with _filmy:
 # rok, pocet_filmu, filmy_year.csv
 
 
-# GDP
-with _GDP:
+# HDP
+with _HDP:
 
     st.write("")  # malá mezera
     st.write("")  # větší mezera
