@@ -49,13 +49,13 @@ with _2:
 with _3:
     st.error('Top filmy')
 with _4:
-    st.info('GDP')
+    st.info('GDP vs. délka života')
 
 
 st.info('Zobrazení v grafu:')
 
 
-_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP'])
+_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP vs. délka života'])
 
 
 # Bodování
