@@ -55,7 +55,7 @@ with _4:
 st.info('Zobrazení v grafu:')
 
 
-_bodovani, _products, _filmy = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP'])
+_bodovani, _products, _filmy, _GDP = st.tabs(['Bodování řidičů', 'Prodeje e-shopu', 'Top filmy', 'GDP'])
 
 
 # Bodování
