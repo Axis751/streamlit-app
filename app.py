@@ -235,14 +235,14 @@ with _filmy:
 # rok, pocet_filmu, filmy_year.csv
 
 
-# HDP
+# HDP "HDP vs. Délka života (2007) - najeď myší na bubliny</p>"
 with _GDP:
 
     st.write("")  # malá mezera
     st.write("")  # větší mezera
     st.markdown(
         "<p style='text-align: center; font-size: 16px; font-weight: 600;'>"
-        "HDP vs. Délka života (2007) - najeď myší na bubliny</p>",
+        "HDP vs. Délka života (2007) - v přípravě</p>",
         unsafe_allow_html=True
     )
 
